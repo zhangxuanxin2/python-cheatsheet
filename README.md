@@ -6,25 +6,24 @@ Comprehensive Python Cheatsheet
 ![Monty Python](web/image_888.jpeg)
 
 
-Contents
+目录
 --------
-**&nbsp;&nbsp;&nbsp;** **1. Collections:** **&nbsp;** **[`List`](#list)**__,__ **[`Dictionary `](#dictionary)**__,__ **[`Set`](#set)**__,__ **[`Tuple`](#tuple)**__,__ **[`Range`](#range)**__,__ **[`Enumerate`](#enumerate)**__,__ **[`Iterator`](#iterator)**__,__ **[`Generator`](#generator)**__.__  
-**&nbsp;&nbsp;&nbsp;** **2. Types:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Type`](#type)**__,__ **[`String`](#string)**__,__ **[`Regular_Exp`](#regex)**__,__ **[`Format`](#format)**__,__ **[`Numbers`](#numbers)**__,__ **[`Combinatorics`](#combinatorics)**__,__ **[`Datetime`](#datetime)**__.__  
-**&nbsp;&nbsp;&nbsp;** **3. Syntax:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Args`](#arguments)**__,__ **[`Inline`](#inline)**__,__ **[`Closure`](#closure)**__,__ **[`Decorator`](#decorator)**__,__ **[`Class`](#class)**__,__ **[`Duck_Types`](#duck-types)**__,__ **[`Enum`](#enum)**__,__ **[`Exceptions`](#exceptions)**__.__  
-**&nbsp;&nbsp;&nbsp;** **4. System:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Print`](#print)**__,__ **[`Input`](#input)**__,__ **[`Command_Line_Arguments`](#command-line-arguments)**__,__ **[`Open`](#open)**__,__ **[`Path`](#path)**__,__ **[`Command_Execution`](#command-execution)**__.__  
-**&nbsp;&nbsp;&nbsp;** **5. Data:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`CSV`](#csv)**__,__ **[`JSON`](#json)**__,__ **[`Pickle`](#pickle)**__,__ **[`SQLite`](#sqlite)**__,__ **[`Bytes`](#bytes)**__,__ **[`Struct`](#struct)**__,__ **[`Array`](#array)**__,__ **[`MemoryView`](#memory-view)**__,__ **[`Deque`](#deque)**__.__  
-**&nbsp;&nbsp;&nbsp;** **6. Advanced:** **&nbsp;&nbsp;&nbsp;**  **[`Threading`](#threading)**__,__ **[`Introspection`](#introspection)**__,__ **[`Metaprograming`](#metaprograming)**__,__ **[`Operator`](#operator)**__,__ **[`Eval`](#eval)**__,__ **[`Coroutine`](#coroutine)**__.__  
-**&nbsp;&nbsp;&nbsp;** **7. Libraries:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Progress_Bar`](#progress-bar)**__,__ **[`Plot`](#plot)**__,__ **[`Table`](#table)**__,__ **[`Curses`](#curses)**__,__ **[`Logging`](#logging)**__,__ **[`Scraping`](#scraping)**__,__ **[`Web`](#web)**__,__ **[`Profile`](#profile)**__,__  
+**&nbsp;&nbsp;&nbsp;** **1. 容器:** **&nbsp;** **[`List`](#list)**__,__ **[`Dictionary `](#dictionary)**__,__ **[`Set`](#set)**__,__ **[`Tuple`](#tuple)**__,__ **[`Range`](#range)**__,__ **[`Enumerate`](#enumerate)**__,__ **[`Iterator`](#iterator)**__,__ **[`Generator`](#generator)**__.__  
+**&nbsp;&nbsp;&nbsp;** **2. 类型:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Type`](#type)**__,__ **[`String`](#string)**__,__ **[`Regular_Exp`](#regex)**__,__ **[`Format`](#format)**__,__ **[`Numbers`](#numbers)**__,__ **[`Combinatorics`](#combinatorics)**__,__ **[`Datetime`](#datetime)**__.__  
+**&nbsp;&nbsp;&nbsp;** **3. 语法:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Args`](#arguments)**__,__ **[`Inline`](#inline)**__,__ **[`Closure`](#closure)**__,__ **[`Decorator`](#decorator)**__,__ **[`Class`](#class)**__,__ **[`Duck_Types`](#duck-types)**__,__ **[`Enum`](#enum)**__,__ **[`Exceptions`](#exceptions)**__.__  
+**&nbsp;&nbsp;&nbsp;** **4. 系统:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Print`](#print)**__,__ **[`Input`](#input)**__,__ **[`Command_Line_Arguments`](#command-line-arguments)**__,__ **[`Open`](#open)**__,__ **[`Path`](#path)**__,__ **[`Command_Execution`](#command-execution)**__.__  
+**&nbsp;&nbsp;&nbsp;** **5. 数据:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`CSV`](#csv)**__,__ **[`JSON`](#json)**__,__ **[`Pickle`](#pickle)**__,__ **[`SQLite`](#sqlite)**__,__ **[`Bytes`](#bytes)**__,__ **[`Struct`](#struct)**__,__ **[`Array`](#array)**__,__ **[`MemoryView`](#memory-view)**__,__ **[`Deque`](#deque)**__.__  
+**&nbsp;&nbsp;&nbsp;** **6. 高级用法:** **&nbsp;&nbsp;&nbsp;**  **[`Threading`](#threading)**__,__ **[`Introspection`](#introspection)**__,__ **[`Metaprograming`](#metaprograming)**__,__ **[`Operator`](#operator)**__,__ **[`Eval`](#eval)**__,__ **[`Coroutine`](#coroutine)**__.__  
+**&nbsp;&nbsp;&nbsp;** **7. 常用库:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Progress_Bar`](#progress-bar)**__,__ **[`Plot`](#plot)**__,__ **[`Table`](#table)**__,__ **[`Curses`](#curses)**__,__ **[`Logging`](#logging)**__,__ **[`Scraping`](#scraping)**__,__ **[`Web`](#web)**__,__ **[`Profile`](#profile)**__,__  
 **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** **[`NumPy`](#numpy)**__,__ **[`Image`](#image)**__,__ **[`Audio`](#audio)**__.__
 
 
 Main
 ----
 ```python
-if __name__ == '__main__':     # Runs main() if file wasn't imported.
+if __name__ == '__main__':     # 运单文件时,执行main()函数,拥于单元测试
     main()
 ```
-
 
 List
 ----
@@ -38,28 +37,28 @@ List
 ```
 
 ```python
-<list>.sort()
-<list>.reverse()
-<list> = sorted(<collection>)
-<iter> = reversed(<list>)
+<list>.sort()   # 排序
+<list>.reverse()    # 倒序
+<list> = sorted(<collection>)   # 将可迭代对象转换为列表,并排序
+<iter> = reversed(<list>)       # 将列表倒序,并转化为迭代器
 ```
 
 ```python
-sum_of_elements  = sum(<collection>)
+sum_of_elements  = sum(<collection>)    # 容器值求和
 elementwise_sum  = [sum(pair) for pair in zip(list_a, list_b)]
 sorted_by_second = sorted(<collection>, key=lambda el: el[1])
 sorted_by_both   = sorted(<collection>, key=lambda el: (el[1], el[0]))
 flatter_list     = list(itertools.chain.from_iterable(<list>))
 product_of_elems = functools.reduce(lambda out, x: out * x, <collection>)
-list_of_chars    = list(<str>)
+list_of_chars    = list(<str>)  # 将字符串转换为列表 list('a,b,c) --> ['a', 'b', 'c']
 ```
 
 ```python
-index = <list>.index(<el>)     # Returns index of first occurrence or raises ValueError.
-<list>.insert(index, <el>)     # Inserts item at index and moves the rest to the right.
-<el> = <list>.pop([index])     # Removes and returns item at index or from the end.
-<list>.remove(<el>)            # Removes first occurrence of item or raises ValueError.
-<list>.clear()                 # Removes all items. Also works on dict and set.
+index = <list>.index(<el>)     # 返回第一个符合的列表元素,没有则抛出异常
+<list>.insert(index, <el>)     # 将元素精确插入列表位置, 列表右边的值顺延一位
+<el> = <list>.pop([index])     # 删除并返回指定元素,默认最后.
+<list>.remove(<el>)            # 删除第一个符合的列表元素,没有则抛出异常.
+<list>.clear()                 # 清空列表元素,该方法同样适用于字典和集合容器.
 ```
 
 
@@ -72,7 +71,7 @@ Dictionary
 ```
 
 ```python
-value  = <dict>.get(key, default=None)          # Returns default if key does not exist.
+value  = <dict>.get(key, default=None)          # 返回字典值,没有就返回默认值:None.
 value  = <dict>.setdefault(key, default=None)   # Same, but also adds default to dict.
 <dict> = collections.defaultdict(<type>)        # Creates a dict with default value of type.
 <dict> = collections.defaultdict(lambda: 1)     # Creates a dict with default value 1.
@@ -81,13 +80,13 @@ value  = <dict>.setdefault(key, default=None)   # Same, but also adds default to
 ```python
 <dict>.update(<dict>)
 <dict> = dict(<collection>)                     # Creates a dict from coll. of key-value pairs.
-<dict> = dict(zip(keys, values))                # Creates a dict from two collections.
+<dict> = dict(zip(keys, values))                # 将两个容器的组合成字典,字典长度与较短的容器相同.
 <dict> = dict.fromkeys(keys [, value])          # Creates a dict from collection of keys.
 ```
 
 ```python
-value = <dict>.pop(key)                         # Removes item from dictionary.
-{k: v for k, v in <dict>.items() if k in keys}  # Filters dictionary by keys.
+value = <dict>.pop(key)                         # 删除字典元素.
+{k: v for k, v in <dict>.items() if k in keys}  # 通过keys筛选字典.
 ```
 
 ### Counter
